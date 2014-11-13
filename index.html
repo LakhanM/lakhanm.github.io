@@ -1,19 +1,177 @@
-<!doctype html>
+﻿<!doctype html>
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
+    <title>Lakhan Melugiri</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
+      <link rel="stylesheet" href="stylesheets/foundation-icons.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
-  <body>
-   <div>
-   Test Website
-   </div>
- 
+<body class="main_body">
+    <div id="navBar">
+        <nav class="top-bar" data-topbar role="navigation">
+            <ul class="title-area">
+                <li class="name">
+                    <h1><a href="#home" id="logo_button">Lakhan Melugiri</a></h1>
+                </li>
+                <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+            </ul>
+            <section class="top-bar-section">
+                <ul class="right">
+                    <li><a href="#home" id="homeButton">HOME</a></li>
+                    <li><a href="#profile" id="profileButton">PROFILE</a></li>
+                    <li><a href="#resume" id="resumeButton">RESUME</a></li>
+                    <li><a href="#projects" id="projectsButton">PROJECTS</a></li>
+                    <li><a href="#contactMe" id="contactButton">CONTACT</a></li>
+                </ul>
+            </section>
+        </nav>
+    </div>
+
+    <div id="home">
+        <div class="row collapse">
+            <div class="home_headers small-12 medium-11 large-12 small-centered medium-centered large-centered columns">
+                <h1 class="heading">Lakhan Melugiri</h1>
+                <a class="home_scrollImage" href="#profile"> </a>
+                <h5>Please scroll down to view my Profile.</h5>
+            </div>
+        </div>
+    </div>
+
+    <div id="profile">
+        <div class="row">
+            <div style="background:white; color:black; margin-top: 120px;">
+                <h1>Under Construction</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="resume">
+        <div class="medium-11 large-12 columns show-for-medium-up">
+            <iframe src="Content/Resume/Lakhan Melugiri Resume.pdf" width="700" height="500" style="margin-top:100px"></iframe>
+        </div>
+        <div class="small-12 show-for-small">
+            <div style="padding-top:200px;color:white;">
+                Please get the resume from the below link:
+                <br />
+                <a href="Content/Resume/Lakhan Melugiri Resume.pdf">Resume</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="row">
+            <div style="background:white; color:black; margin-top: 120px;">
+                <h1>Under Construction</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="contactMe">
+        <div class="large-12 columns contactMe_body">
+            <h1>Contact Me</h1>
+            <h5>Have a question or two? Like my work?<br />Want to learn more about me?     </h5>
+            <h6>Feel free to email me any time: <a href="mailto:email@lakhan.melugiri@gmail.com">Lakhan.Melugiri@gmail.com</a></h6>
+            <div class="social-icons">
+                <a href="https://github.com/LakhanM" class="fi-social-github"> Github</a> <a href="https://www.linkedin.com/pub/lakhan-melugiri/40/70a/24a" class="fi-social-linkedin"> LinkedIn</a>
+            </div>
+        </div>
+    </div>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script type="text/javascript" src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
     <script src="js/app.js"></script>
-  </body>
+    <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="js/skrollr.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $(window).load(function () {
+                $("html").niceScroll({
+                    zindex: "999999",
+                    cursoropacitymin: 0,
+                    cursoropacitymax: 1,
+                    cursorcolor: "rgba(0,0,0, 0.7)",
+                    cursorwidth: "9px",
+                    cursorborder: "0",
+                    cursorborderradius: "0px",
+                    scrollspeed: 100,
+                    mousescrollstep: 10,
+                    touchbehavior: false,
+                    hwacceleration: true,
+                    usetransition: true,
+                    boxzoom: false,
+                    dblclickzoom: true,
+                    gesturezoom: true,
+                    grabcursorenabled: true,
+                    autohidemode: true,
+                    background: "rgba(255,255,255,0)",
+                    iframeautoresize: true,
+                    cursorminheight: 32,
+                    preservenativescrolling: true,
+                    railoffset: true,
+                    bouncescroll: true,
+                    spacebarenabled: true,
+                    railpadding: { top: 0, right: 1, left: 0, bottom: 0 },
+                    disableoutline: true,
+                    horizrailenabled: true,
+                    railalign: "right",
+                    railvalign: "bottom",
+                    enabletranslate3d: true,
+                    enablemousewheel: true,
+                    enablekeyboard: true,
+                    smoothscroll: true,
+                    sensitiverail: true,
+                    enablemouselockapi: true,
+                    cursormaxheight: false,
+                    cursorfixedheight: false,
+                    directionlockdeadzone: 6,
+                    hidecursordelay: 200,
+                    nativeparentscrolling: true,
+                    enablescrollonselection: true,
+                    overflowx: true,
+                    overflowy: true,
+                    cursordragspeed: 0.3,
+                    rtlmode: false,
+                    cursordragontouch: false,
+                    oneaxismousemode: "auto"
+                });
+
+                if (!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+                    skrollr.init({
+                        forceHeight: false
+                    });
+                    $("#navBar").addClass("menu");
+                }
+            });
+        });
+
+        $(function () {
+            $('#homeButton').click(function () {
+                $.scrollTo("0px", "0px", { duration: 1000 });
+            });
+            $('.home_scrollImage').click(function () {
+                $.scrollTo($('#profile'), { duration: 1000 });
+            });
+            $('#profileButton').click(function () {
+                $.scrollTo($('#profile'), { duration: 1000 });
+            });
+            $('#resumeButton').click(function () {
+                $.scrollTo($('#resume'), { duration: 1000 });
+            });
+            $('#logo_button').click(function () {
+                $.scrollTo("0px", "0px", { duration: 1500 });
+            });
+            $('#projectsButton').click(function () {
+                $.scrollTo($('#projects'), { duration: 1500 });
+            });
+            $('#contactButton').click(function () {
+                $.scrollTo($('#contactMe'), { duration: 1500 });
+            });
+        });
+    </script>
+</body>
+
 </html>
