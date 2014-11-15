@@ -186,7 +186,7 @@ $topbar-bg-color: white;
             color: black;
         }
     }
-        
+            
     .contactMe_footer {
         height:10em;
         background: black;
@@ -198,8 +198,18 @@ $topbar-bg-color: white;
             color: white;
             position: absolute;
             right: 12px;
+            width:auto;
         }
     }
+
+    @media #{$small-only} {
+
+    .contactMe_body {
+        top:120px;
+    }
+    }
+
+
 
 
 }
