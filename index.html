@@ -48,14 +48,16 @@
     </div>
 
     <div id="resume">
-        <div class="medium-11 large-12 columns show-for-medium-up">
-            <iframe src="Content/Resume/Lakhan Melugiri Resume.pdf" width="700" height="500" style="margin-top:100px"></iframe>
+        <div class="medium-12 large-12 columns show-for-medium-up resume_largeBody">
+                <h3>Resume</h3>
+            <iframe src="Content/Resume/Lakhan Melugiri Resume.pdf" id="resumeFrame"></iframe>
         </div>
-        <div class="small-12 show-for-small">
-            <div style="padding-top:200px;color:white;">
-                Please get the resume from the below link:
-                <br />
-                <a href="Content/Resume/Lakhan Melugiri Resume.pdf">Resume</a>
+        <div class="show-for-small">
+            <div class="row">
+                <div class="small-10 small-centered columns resume_mobileBody">
+                    <h5>Please download the resume from the below link:</h5>
+                    <a href="Content/Resume/Lakhan Melugiri Resume.pdf" class="small button">RESUME</a>
+                </div>
             </div>
         </div>
     </div>
@@ -71,13 +73,20 @@
     <div id="contactMe">
         <div class="large-12 columns contactMe_body">
             <h1>Contact Me</h1>
-            <h5>Have a question or two? Like my work?<br />Want to learn more about me?     </h5>
+            <h5>Have a question or two? Like my work? Want to learn more about me?</h5>
             <h6>Feel free to email me any time: <a href="mailto:lakhan.melugiri@gmail.com">Lakhan.Melugiri@gmail.com</a></h6>
             <div class="social-icons">
                 <a href="https://github.com/LakhanM" class="fi-social-github"> Github</a> <a href="https://www.linkedin.com/pub/lakhan-melugiri/40/70a/24a" class="fi-social-linkedin"> LinkedIn</a>
             </div>
+
+        </div>
+        <div class="large-12 columns contactMe_footer">
+
+                <h6>Powered by "LM"</h6>
+
         </div>
     </div>
+
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script type="text/javascript" src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
@@ -150,19 +159,19 @@
 
         $(function () {
             $('#homeButton').click(function () {
-                $.scrollTo("0px", "0px", { duration: 1000 });
+                $.scrollTo($('#home'), { duration: 1500 });
             });
             $('.home_scrollImage').click(function () {
-                $.scrollTo($('#profile'), { duration: 1000 });
+                $.scrollTo($('#profile'), { duration: 1500 });
             });
             $('#profileButton').click(function () {
-                $.scrollTo($('#profile'), { duration: 1000 });
+                $.scrollTo($('#profile'), { duration: 1500 });
             });
             $('#resumeButton').click(function () {
-                $.scrollTo($('#resume'), { duration: 1000 });
+                $.scrollTo($('#resume'), { duration: 1500 });
             });
             $('#logo_button').click(function () {
-                $.scrollTo("0px", "0px", { duration: 1500 });
+                $.scrollTo($('#home'), { duration: 1500 });
             });
             $('#projectsButton').click(function () {
                 $.scrollTo($('#projects'), { duration: 1500 });

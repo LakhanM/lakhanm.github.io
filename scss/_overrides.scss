@@ -10,7 +10,7 @@ $topbar-bg-color: white;
     position: fixed;
     top: 0;
     left: 0;
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: 3px solid black;
     z-index: 90;
 }
 
@@ -24,7 +24,6 @@ $topbar-bg-color: white;
 
      &:hover { 
          background : #e0e0e0 !important; 
-         border-bottom: 5px solid black !important; 
          transition: all 0.5s ease-in-out;
      }
 }
@@ -67,21 +66,6 @@ $topbar-bg-color: white;
             h5 { color : white; font-weight: bold; }
     }
 
-    .home_footer {
-        height: 5em;
-        color: rgb(173, 216, 230);
-        background: blue;
-        position: absolute;
-        bottom: 0px;
-
-        .footer_text {
-            h6 { color:white; font-weight:bold; }
-
-            padding-top: 0.5em;
-            text-align: left;
-        }
-    }
-
     @media #{$small-only} {
         .home_headers {
                  .heading {
@@ -91,17 +75,8 @@ $topbar-bg-color: white;
                 }
              }
 
-        .home_footer {
-            height: 7em;
-
-            .footer_text {
-                font-size: small;
-            }
-
-            .button {
-                margin-top: 2em;
-                font-size: x-small;
-            }
+        .home_scrollImage {
+            margin-top:240px;
         }
     }
 
@@ -113,15 +88,6 @@ $topbar-bg-color: white;
                     font-size: 3em;
                 }
             }
-        .home_footer {
-                .footer_text {
-                    font-size: small;
-                }
-                .button {
-                    margin-top: 0.5em;
-                    font-size: small;
-                }
-            }
     }
 
     @media #{$large-up} {
@@ -130,19 +96,6 @@ $topbar-bg-color: white;
             margin-top: 150px;
             font-size: 3em;
         }
-
-        .home_footer {
-
-                .footer_text {
-                padding-top: 0.5em;
-                text-align: left;
-                }
-
-                .button {
-                    margin-top: 0.5em;
-                }
-
-            }
     }
 }
 
@@ -163,8 +116,50 @@ $topbar-bg-color: white;
 #resume {
     text-align: center;
     min-height: 100%;
-    background: url(../Content/Images/swirl.jpg) no-repeat;
-    background-size: 100% 100%;
+    background: #4d4b4b;
+
+    .resume_largeBody {
+
+        h3 {
+            color:white;
+            text-align: left;
+            margin-top:80px;
+            margin-left:30px;
+        }
+
+        iframe {
+            min-width: 52em;
+            height: 30em;
+            margin-top:10px;
+        }
+    }
+
+    .resume_mobileBody {
+        height: 12em;
+        background: #e0e0e0;
+        color: black;
+        top:200px;
+        padding:1em;
+        border-radius:10px;
+
+        .button {
+            background: #808080;
+            color: white;
+            border:1px solid white;
+            margin-top:2em;            
+            border-radius:10px;
+        }  
+    }
+
+    @media #{$medium-only} {
+        .resume_largeBody {
+        iframe {
+            min-width: 45em;
+            height: 25em;
+            margin-top:10px;
+        }
+    }
+    }
 }
 
 #projects {
@@ -177,13 +172,11 @@ $topbar-bg-color: white;
 #contactMe {
     text-align: center;
     min-height: 100%;
-    background: url(../Content/Images/clock.jpg) no-repeat;
-    background-size: 100% 100%;
+    background: #e0e0e0;
+    position: relative; 
 
     .contactMe_body {
         top:150px;
-        text-align: right;
-        right:3%;
     }
 
     .social-icons {
@@ -193,10 +186,22 @@ $topbar-bg-color: white;
             color: black;
         }
     }
+        
+    .contactMe_footer {
+        height:10em;
+        background: black;
+        bottom: 0;
+        position: absolute; 
 
-    .contactMe_footer a {
-        color: black;
+        h6 {
+            bottom: 0;
+            color: white;
+            position: absolute;
+            right: 12px;
+        }
     }
+
+
 }
 
 
