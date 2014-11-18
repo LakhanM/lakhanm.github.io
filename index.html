@@ -19,35 +19,35 @@
             </ul>
             <section class="top-bar-section">
                 <ul class="right">
-                    <li><a href="#home" id="homeButton">HOME</a></li>
-                    <li><a href="#profile" id="profileButton">PROFILE</a></li>
-                    <li><a href="#resume" id="resumeButton">RESUME</a></li>
-                    <li><a href="#projects" id="projectsButton">PROJECTS</a></li>
-                    <li><a href="#contactMe" id="contactButton">CONTACT</a></li>
+                    <li><a id="homeButton">HOME</a></li>
+                    <li><a id="profileButton">PROFILE</a></li>
+                    <li><a id="resumeButton">RESUME</a></li>
+                    <li><a id="projectsButton">PROJECTS</a></li>
+                    <li><a id="contactButton">CONTACT</a></li>
                 </ul>
             </section>
         </nav>
     </div>
 
-    <div id="home">
+    <section id="home">
         <div class="row collapse">
             <div class="home_headers small-12 medium-11 large-12 small-centered medium-centered large-centered columns">
                 <h1 class="heading">Lakhan Melugiri</h1>
-                <a class="home_scrollImage" href="#profile"> </a>
+                <a class="home_scrollImage"> </a>
                 <h5>Please scroll down to view my Profile.</h5>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="profile">
+    <section id="profile">
         <div class="row">
             <div style="background:white; color:black; margin-top: 120px;">
                 <h1>Under Construction</h1>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="resume">
+    <section id="resume">
         <div class="medium-12 large-12 columns show-for-medium-up resume_largeBody">
                 <h3>Resume</h3>
             <iframe src="Content/Resume/Lakhan Melugiri Resume.pdf" id="resumeFrame"></iframe>
@@ -60,17 +60,17 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="projects">
+    <section id="projects">
         <div class="row">
             <div style="background:white; color:black; margin-top: 120px;">
                 <h1>Under Construction</h1>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="contactMe">
+    <section id="contactMe">
         <div class="large-12 columns contactMe_body">
             <h1>Contact Me</h1>
             <h5>Have a question or two? Like my work? Want to learn more about me?</h5>
@@ -82,7 +82,7 @@
         <div class="large-12 columns contactMe_footer">
             <h6>Powered by "LM"</h6>
         </div>
-    </div>
+    </section>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
@@ -156,25 +156,25 @@
 
         $(function () {
             $('#homeButton').click(function () {
-                $.scrollTo($('#home'), { duration: 1500 });
+                $.scrollTo($('#home'), { duration: 1200 });
             });
             $('.home_scrollImage').click(function () {
-                $.scrollTo($('#profile'), { duration: 1500 });
+                $.scrollTo($('#profile'), { duration: 1200 });
             });
             $('#profileButton').click(function () {
-                $.scrollTo($('#profile'), { duration: 1500 });
+                $.scrollTo($('#profile'), { duration: 1200 });
             });
             $('#resumeButton').click(function () {
-                $.scrollTo($('#resume'), { duration: 1500 });
+                $.scrollTo($('#resume'), { duration: 1200 });
             });
             $('#logo_button').click(function () {
-                $.scrollTo($('#home'), { duration: 1500 });
+                $.scrollTo($('#home'), { duration: 1200 });
             });
             $('#projectsButton').click(function () {
-                $.scrollTo($('#projects'), { duration: 1500 });
+                $.scrollTo($('#projects'), { duration: 1200 });
             });
             $('#contactButton').click(function () {
-                $.scrollTo($('#contactMe'), { duration: 1500 });
+                $.scrollTo($('#contactMe'), { duration: 1200 });
             });
         });
     </script>
